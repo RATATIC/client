@@ -81,4 +81,6 @@ int main(int argc, char** argv)
     		it.join();
     	}
     }
+    
+    out.close();
 }
