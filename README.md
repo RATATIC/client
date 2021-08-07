@@ -1,44 +1,48 @@
+## Тестовое задание от ITS Partner
 
-Здраствуйте 
+####Историю коммитов лучше смотреть из этой части, т.к. в начале папки src не было,и все файлы были тут 
 
-Проект находиттся на ветке dev
+---
 
 Использовал библеотеку boost 
 
-Способ установить :
+    Способ установки(команды для терманала) :
 
-wget -O boost_1_76_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.76.0/boost_1_76_0.tar.gz/download
+1. wget -O boost_1_76_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.76.0/boost_1_76_0.tar.gz/download
 
-tar xzvf boost_1_76_0.tar.gz
+2. tar xzvf boost_1_76_0.tar.gz
 
-cd boost_1_76_0/
+3. cd boost_1_76_0/
 
-./bootstrap.sh --prefix=/usr/
+4. ./bootstrap.sh --prefix=/usr/
 
-./b2
+5. ./b2
 
-sudo ./b2 install
+6. sudo ./b2 install
 
-Все boost установлен
+boost установлен
 
 Также использовал libcurl
 
-способ установки :
+    способ установки :
 
-sudo apt-get update
+1. sudo apt-get update
  
-sudo apt-get install curl
+2. sudo apt-get install curl
+
+---
 
 функции в программе :
 
-getResponse_http - делает  http запрос на google.com  и возвращет ответ 
+getResponse_http - отправляет http запрос на google.com  и возвращает ответ 
 
-getResponse_https - делает https запрос на example.com и выводит на консоль ответ 
+getResponse_https - отправляет https запрос на example.com и выводит на консоль ответ 
 
 chageDate - изменяет дату на Linux машине 
 
+---
 
-Также хотел добавить ,что выпольнять  задание очень понравилось.
+P.S. Также хотел добавить ,что выполнять задание очень понравилось. Во время вылнения задания самая большая проблема оказалась установить на Linux библеотеку boost.
 
-P.S. Наверное я не правильно понял ,что значит ,чтобы функция логирования отдвала сообщение другому потоку, так что извеняюсь если я неправильно сделал эту часть 
+Наверное я не правильно понял ,что значит - функция логирования отдавала сообщение другому потоку, так что извиняюсь если я неправильно выполнил эту часть 
  
