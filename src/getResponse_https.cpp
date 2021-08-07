@@ -1,7 +1,9 @@
 #include "getResponse.h"
 
-void getResponse_https()
+void getResponse_https(std::string& nameOfFunc)
 {
+	nameOfFunc = std::string(__FUNCTION__);
+
 	CURL *curl;
 	
 	CURLcode res;

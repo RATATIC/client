@@ -2,8 +2,10 @@
 
 namespace http = boost::beast::http;
 
-std::string getResponse_http()
+std::string getResponse_http(std::string& nameOfFunc)
 {
+    nameOfFunc = std::string(__FUNCTION__);
+
     const std::string host = "google.com";
     const std::string target = "";
 

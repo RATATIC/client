@@ -20,4 +20,4 @@ getResponse_https.o : getResponse_https.cpp
 	g++ -c getResponse_https.cpp -lcurl
 
 clean :
-	rm -rf *.o hello
+	rm -rf *.o main
