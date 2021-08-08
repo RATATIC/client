@@ -1,26 +1,7 @@
-#include <fstream>
-#include <thread>
-#include <vector>
-
 #include "getResponse.h"
 
-std::string logger(std::string message)
-{
-	if(message == "start")
-		return "==========Start Program==========\n\n";
-	
-	if(message == "end")
-		return "\n==========End Program==========\n\n";
-	
-	return "Function " + message + " completed successfully\n" ;
-}
-
-void changeDate (std::string& date, std::string& nameOfFunc)
-{
-    nameOfFunc = std::string(__FUNCTION__);
-    
-    date[13] += 3;
-
+void changeDate (std::string date)
+{   
     date = "sudo date -s \"" + date + "\"";
     
     system (date.c_str());
@@ -28,8 +9,6 @@ void changeDate (std::string& date, std::string& nameOfFunc)
 
 int main(int argc, char** argv)
 {
-    std::string nameOfFunc;
-    
     char* fileName;
     
     if(argc == 2)
@@ -43,36 +22,34 @@ int main(int argc, char** argv)
     }
     
     std::ofstream out (fileName, std::ios::app);
-    
-    
+        
     std::vector<std::thread> thr_vec;
     
-    auto writeMessage = [&](std::string message)
+    thr_vec.reserve(2);
+
+    auto writeInFile = [&](std::string message, bool successful, bool function) 
     {
-    	out << message;
+    if(thr_vec.size() > 0)
+    {
+        if(thr_vec[thr_vec.size() - 1].joinable())
+    	{
+    		thr_vec[thr_vec.size() - 1].join();
+    	}
+    }
+    
+    thr_vec.push_back(std::thread (writeLogInFile, std::ref(out), logger(message, successful, function)));
     };
     
-    thr_vec.push_back(std::thread (writeMessage, logger("start")));
-
-    std::string response = getResponse_http(nameOfFunc);
-    
-    thr_vec[thr_vec.size() - 1].join();    
-    thr_vec.push_back(std::thread (writeMessage, logger(nameOfFunc)));
-
-    std::string date (response, response.find("Date", 0) + 11, 20);
-
-    changeDate(date, nameOfFunc);
-    
+    writeInFile("start", false, false); // writeLogInFile("start", false, false);
     thr_vec[thr_vec.size() - 1].join();
-    thr_vec.push_back(std::thread (writeMessage, logger(nameOfFunc)));
+    
+    std::string response = getResponse_http(out);
 
-    getResponse_https(nameOfFunc);
+    changeDate(std::string (response, response.find("Date", 0) + 11, 20));
+
+    getResponse_https(out);
     
-    thr_vec[thr_vec.size() - 1].join();
-    thr_vec.push_back(std::thread (writeMessage, logger(nameOfFunc)));
-    
-    thr_vec[thr_vec.size() - 1].join();
-    thr_vec.push_back(std::thread (writeMessage, logger("end")));
+    writeInFile("end", false, false);
     
     for(auto& it : thr_vec)
     {

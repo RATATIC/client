@@ -48,3 +48,468 @@ Function getResponse_https completed successfully
 
 ==========End Program==========
 
+==========Start Program==========
+
+Function getResponse_http completed successfully
+Function changeDate completed successfully
+
+==========End Program==========
+
+Function getResponse_https completed successfully
+==========Start Program==========
+
+Function getResponse_http completed successfully
+Function changeDate completed successfully
+
+==========End Program==========
+
+Function getResponse_https completed successfully
+==========Start Program==========
+
+Function getResponse_http completed successfully
+Function changeDate completed successfully
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Sending request
+Getting response
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+Function changeDate completed successfully
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+==========Start Program==========
+
+Try to connection google.com
+Begin getResponse_http
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+Function changeDate completed successfully
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+==========Start Program==========
+
+Try to connection google.com
+Begin getResponse_http
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Begin changeDate
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Try to connection google.com
+Begin getResponse_http
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Begin changeDate
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Try to connection google.com
+Begin getResponse_http
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Begin changeDate
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Try to connection google.com
+Begin getResponse_http
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Getting response
+Sending request
+Connection  successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Function changeDate completed successfully
+
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Function changeDate completed successfully
+
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Function changeDate completed successfully
+
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Function changeDate completed successfully
+
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+Begin getResponse_http
+==========Start Program==========
+
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+Begin getResponse_http
+==========Start Program==========
+
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+Begin getResponse_http
+==========Start Program==========
+
+Try to connection google.com
+Connection  successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Try connection to example.com
+Begin getResponse_https
+Connection successful
+Function getResponse_https completed successfully
+
+Close connection successful
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Try connection to example.com
+Begin getResponse_https
+Connection successful
+Function getResponse_https completed successfully
+
+Close connection successful
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Try connection to example.com
+Begin getResponse_https
+Connection successful
+Function getResponse_https completed successfully
+
+Close connection successful
+==========End Program==========
+
+Try to connection google.com
+Begin getResponse_http
+==========Start Program==========
+
+Getting response
+Sending request
+Connection successful
+Close connection successful
+Function getResponse_http completed successfully
+
+Try connection to example.com
+Begin getResponse_https
+Connection successful
+Function getResponse_https completed successfully
+
+Close connection successful
+==========End Program==========
+
+Begin getResponse_http
+==========Start Program==========
+
+Try to connection google.com
+Connection successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+==========End Program==========
+
