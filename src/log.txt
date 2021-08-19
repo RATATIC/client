@@ -513,3 +513,85 @@ Function getResponse_https completed successfully
 
 ==========End Program==========
 
+==========Start Program==========
+
+Begin getResponse_http
+Try to connection google.com
+Connection successful
+Sending request
+Getting response
+Close connection successful
+Function getResponse_http completed successfully
+
+Begin getResponse_https
+Try connection to example.com
+Connection successful
+Close connection successful
+Function getResponse_https completed successfully
+
+==========End Program==========
+
+
+===== Start Program =====
+
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: connection successful
+getResponse_http: get response
+getResponse_http: close connection
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: connection successful
+getResponse_http: get response
+getResponse_http: close connection
+getResponse_https: try connection and getting response
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: connection successful
+getResponse_http: get response
+getResponse_http: close connection
+getResponse_https: try connection and getting response
+getResponse_https: close connection
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: error
+getResponse_https: try connection and getting response
+getResponse_https: close connection
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: error
+getResponse_https: try connection and getting response
+getResponse_https: close connection
+
+===== End Program =====
+
+===== Start Program =====
+
+getResponse_http: try connection
+getResponse_http: connection successful
+getResponse_http: get response
+getResponse_http: close connection
+getResponse_https: try connection and getting response
+getResponse_https: close connection
+
+===== End Program =====

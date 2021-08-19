@@ -1,6 +1,6 @@
 #include "getResponse.h"
 
-void changeDate (std::string date)
+void changeDate (std::string& date)
 {   
     date = "sudo date -s \"" + date + "\"";
     
@@ -20,44 +20,28 @@ int main(int argc, char** argv)
     	std::cout<< "Enter file name "<<std::endl;
     	std::cin >> fileName;
     }
-    
-    std::ofstream out (fileName, std::ios::app);
-        
-    std::vector<std::thread> thr_vec;
-    
-    thr_vec.reserve(2);
+     
+    Logger Log(fileName);
 
-    auto writeInFile = [&](std::string message, bool successful, bool function) 
+    auto func_log = [&]()
     {
-    if(thr_vec.size() > 0)
-    {
-        if(thr_vec[thr_vec.size() - 1].joinable())
-    	{
-    		thr_vec[thr_vec.size() - 1].join();
-    	}
-    }
-    
-    thr_vec.push_back(std::thread (writeLogInFile, std::ref(out), logger(message, successful, function)));
+    	Log.writeInFile();
     };
     
-    writeInFile("start", false, false); // writeLogInFile("start", false, false);
-    thr_vec[thr_vec.size() - 1].join();
+    std::thread thr(func_log);
     
-    std::string response = getResponse_http(out);
+    Log.makeMessage(1);
+   
+    std::string date = getResponse_http(Log);
 
-    changeDate(std::string (response, response.find("Date", 0) + 11, 20));
-
-    getResponse_https(out);
-    
-    writeInFile("end", false, false);
-    
-    for(auto& it : thr_vec)
+    if(!date.empty())
     {
-    	if(it.joinable())
-    	{
-    		it.join();
-    	}
+    	changeDate(date);
     }
     
-    out.close();
+    getResponse_https(Log);   
+    
+    Log.makeMessage(2);
+    
+    thr.join();
 }
